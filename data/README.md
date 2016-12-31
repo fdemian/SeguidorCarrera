@@ -2,19 +2,18 @@
 
 ## MATERIAS
 
-POST
+### URL
+ 
+ POST get_materias
+ http://www.utnianos.com.ar/foro/xmlhttp.php?action=academica_xmlhttp_getmaterias&my_post_key=
 
-get_materias
+### Parametros
+ - c=id de carrera
+ - p=id de plan.
+ - my_post_key: un id unico que se genera al hacer el request de la pagina, para impedir xss, esta en una variable global que se llama "my_post_key".
 
-URL: http://www.utnianos.com.ar/foro/xmlhttp.php?action=academica_xmlhttp_getmaterias&my_post_key=
+### Respuesta
 
-Parametros:
-c=id de carrera
-p=id de plan.
-my_post_key: un id unico que se genera al hacer el request de la pagina, para impedir xss, esta en una variable global que se llama "my_post_key".
-
-
-Respuesta:
 [
 {
 "a":"año",
@@ -39,7 +38,7 @@ estan agrupadas por años, si son electivas o no, y si son extracurriculares.
 
 POST
 get_correlativas
-URL: http://www.utnianos.com.ar/foro/xmlhttp.php?action=academica_xmlhttp_getcorrelativas&my_post_key=
+http://www.utnianos.com.ar/foro/xmlhttp.php?action=academica_xmlhttp_getcorrelativas&my_post_key=
 
 [
 {
