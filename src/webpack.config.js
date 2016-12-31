@@ -13,17 +13,20 @@ var rewriteUrl = function (replacePath) {
   };
 };
 
+console.log(__dirname, '../');
+console.log("::::::::::::::");
+
 var config = {
   entry: {
     app: './index'
   },
   output: {
     filename: '[name].js',
-    path: path.resolve('../'),
-    publicPath: '/'
+    path: path.resolve(__dirname, '../'),
+    publicPath: path.resolve(__dirname, '../')
   },
   resolve: {
-    root: path.resolve('/'),
+    root: path.resolve(__dirname, '../'),
     extensions: ['', '.js', '.jsx']
   },
   plugins: [
