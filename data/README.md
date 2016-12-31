@@ -1,6 +1,6 @@
 Sacado de http://www.utnianos.com.ar/foro/tema-documentacion-plugin-academicas .
 
-      ========================= MATERIAS ========================
+## MATERIAS
 
 POST
 
@@ -35,7 +35,7 @@ Respuesta:
 
 estan agrupadas por años, si son electivas o no, y si son extracurriculares.
 
-     ========================= COORRELATIVAS ========================
+## COORRELATIVAS
 
 POST
 get_correlativas
@@ -58,14 +58,15 @@ por ejemplo
 rCC es requiere cursada para cursar
 rCF es requiere final para cursar
 
-     ========================= CARRERAS ========================
+## CARRERAS
 
 GET
 get_carreras
 
 http://www.utnianos.com.ar/foro/xmlhttp.php?action=academica_xmlhttp_getcarreras&my_post_key=
 
-       ========================= PLANES ========================
+## PLANES
+
 GET
 get_planes
 
