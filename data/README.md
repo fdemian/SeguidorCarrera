@@ -1,4 +1,4 @@
-Sacado de http://www.utnianos.com.ar/foro/tema-documentacion-plugin-academicas .
+# Documentación de la API actual de UTNianos.
 
 ## MATERIAS
 
