@@ -1,0 +1,37 @@
+.Navbar
+{
+   list-style-type: none;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+   margin-top: -8px;
+   margin-left: -9px;
+   width: 102%;   
+}
+
+.HomeLink
+{
+  underline: none;
+  background-color: #4CAF50;
+}
+
+li {
+    float: left;
+}
+
+.RightLink {
+   float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+

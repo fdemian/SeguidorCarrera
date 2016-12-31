@@ -1,0 +1,44 @@
+.Subject
+{
+  margin-bottom: 10px;
+  max-width: 100%;
+  padding-left: 17px;
+  padding-bottom: 2px;
+  outline: none;
+  border: 1px solid black;
+}
+
+.Subject.Pending
+{
+  visibility: visible;
+  /*border-color: red;
+  box-shadow: 0 0 10px red;*/
+}
+
+.Subject.Taking
+{
+  visibility: visible;
+  /*border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;*/
+}
+
+.Subject.PartiallyFinished
+{
+  visibility: visible;
+  /*border-color: yellow;
+  box-shadow: 0 0 10px yellow;*/
+}
+
+.Subject.Passed
+{
+  visibility: visible;
+  /*border-color: green;
+  box-shadow: 0 0 10px green;*/
+}
+
+.Subject:hover
+{
+  border-color: black;
+  box-shadow: 0 0 10px black;
+  border: 0px;
+}
