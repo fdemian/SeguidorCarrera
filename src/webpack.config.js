@@ -13,9 +13,6 @@ var rewriteUrl = function (replacePath) {
   };
 };
 
-console.log(__dirname, '../');
-console.log("::::::::::::::");
-
 var config = {
   entry: {
     app: './index'
