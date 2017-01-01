@@ -32,7 +32,7 @@ function callAPIMiddleware({ dispatch, getState }) {
     let FULL_URL = "";
 
     if(endpoint.endsWith(".json"))
-      FULL_URL = API_ROOT + "/" + endpoint;
+      FULL_URL = API_ROOT + "/SeguidorCarrera/" + endpoint;
     else
       FULL_URL = API_ROOT + "/api/" + endpoint;
     
