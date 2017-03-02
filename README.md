@@ -1,2 +1,3 @@
-# SeguidorCarrera
-Demo del seguidor de carrera de UTNianos.
+# Seguidor UTNianos
+
+Demo del nuevo seguidor de carrera.

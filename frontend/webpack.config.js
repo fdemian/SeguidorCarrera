@@ -19,11 +19,11 @@ var config = {
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, '../'),
-    publicPath: path.resolve(__dirname, '../')
+    path: path.resolve('../static'),
+    publicPath: '/static'
   },
   resolve: {
-    root: path.resolve(__dirname, '../'),
+    root: path.resolve('/'),
     extensions: ['', '.js', '.jsx']
   },
   plugins: [

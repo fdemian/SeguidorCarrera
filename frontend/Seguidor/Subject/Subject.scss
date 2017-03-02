@@ -5,38 +5,47 @@
   padding-left: 17px;
   padding-bottom: 2px;
   outline: none;
+}
+
+.Subject.Enabled
+{
   border: 1px solid black;
 }
 
-.Subject.Pending
+.Subject.Disabled
+{
+  border: 1px solid gainsboro;
+}
+
+.Subject.Pending.Enabled
 {
   visibility: visible;
   /*border-color: red;
   box-shadow: 0 0 10px red;*/
 }
 
-.Subject.Taking
+.Subject.Taking.Enabled
 {
   visibility: visible;
   /*border-color: #9ecaed;
   box-shadow: 0 0 10px #9ecaed;*/
 }
 
-.Subject.PartiallyFinished
+.Subject.PartiallyFinished.Enabled
 {
   visibility: visible;
   /*border-color: yellow;
   box-shadow: 0 0 10px yellow;*/
 }
 
-.Subject.Passed
+.Subject.Passed.Enabled
 {
   visibility: visible;
   /*border-color: green;
   box-shadow: 0 0 10px green;*/
 }
 
-.Subject:hover
+.Subject.Enabled:hover
 {
   border-color: black;
   box-shadow: 0 0 10px black;
