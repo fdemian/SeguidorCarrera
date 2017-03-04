@@ -4,6 +4,8 @@ import FetchingIndicator from '../Fetching/FetchingIndicator';
 import Styles from './Seguidor.scss';
 import cssModules from 'react-css-modules';
 import YearOfStudy from './YearOfStudy/YearOfStudy';
+import EstadoCarrera from './EstadoCarrera';
+
 
 const studyYears = [1,2,3,4,5];
 
@@ -32,7 +34,8 @@ class Seguidor extends Component {
   return(
   <div>	
 	<h1 styleName="SeguidorHeading">Materias</h1>
-	
+	 <EstadoCarrera subjects={materias.filter(m => m.year == 1)}/>
+
 	<div styleName="YearsVisualizer">
     {studyYears.map((year, i) =>		
 	 <YearOfStudy 

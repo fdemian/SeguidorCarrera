@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
 import {loadEstado, loadMaterias} from './Actions';
 import { Chart } from 'react-google-charts';
+import Subject from './Subject/Subject';
+
  
-class EstadoCarrera extends React.Component {
+class EstadoCarrera extends Component {
   constructor(props) {
     super(props);
+	console.log(this.props);
+	console.log(this.props.subjects);
+	console.log("prueba datos");
     this.state = {
 		options: {
-			title: 'Seguidor de Carrera',
 			width: '100%',
 			height: 100,
 			chartArea: {width: '90%', height: '15%'},
@@ -33,6 +37,7 @@ class EstadoCarrera extends React.Component {
 		],
     };
   }
+
   render() {
     return (
     <div>
