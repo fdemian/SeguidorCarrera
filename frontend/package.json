@@ -38,6 +38,7 @@
     "react-color": "^2.2.6",
     "react-css-modules": "^3.7.10",
     "react-dom": "^15.3.0",
+    "react-google-charts": "^1.5.3",
     "react-loader": "^2.4.0",
     "react-redux": "^4.4.5",
     "react-router": "^2.6.1",
