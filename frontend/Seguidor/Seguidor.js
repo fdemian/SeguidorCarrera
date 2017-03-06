@@ -34,7 +34,7 @@ class Seguidor extends Component {
   return(
   <div>	
 	<h1 styleName="SeguidorHeading">Materias</h1>
-	 <EstadoCarrera subjects={materias.filter(m => m.year == 1)}/>
+	 <EstadoCarrera subjects={materias}/>
 
 	<div styleName="YearsVisualizer">
     {studyYears.map((year, i) =>		

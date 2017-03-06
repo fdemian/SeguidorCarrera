@@ -4,7 +4,8 @@
   "description": "test material-ui",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --history-api-fallback --progress --host 0.0.0.0 --port 3000 --inline --hot",
+    "build": "webpack --progress --colors -d"
   },
   "author": "fdemian",
   "license": "MIT",
@@ -18,7 +19,9 @@
     "babel-register": "^6.9.0",
     "css-loader": "^0.24.0",
     "css-modules-require-hook": "^4.0.2",
+    "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.16.1",
+    "json-loader": "^0.5.4",
     "node-sass": "^3.8.0",
     "postcss-loader": "^0.11.1",
     "react-hot-loader": "^1.3.0",

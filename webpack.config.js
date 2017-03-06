@@ -15,32 +15,27 @@ var rewriteUrl = function (replacePath) {
 
 var config = {
   entry: {
-    app: './index'
+    app: './frontend/index'
   },
   output: {
-    filename: '[name].js',
-    path: path.resolve('../static'),
-    publicPath: '/static'
+    filename: '[name].[hash].js',
+    path: path.resolve('./static/'),
+    publicPath: '/'
   },
   resolve: {
-    root: path.resolve('/'),
+    root: path.resolve('./frontend/'),
     extensions: ['', '.js', '.jsx']
   },
   plugins: [
     new HtmlWebpackPlugin({
       inject: true,
-      template: '../templates/index.html'
+      template: 'templates/index.html'
     }),
     new webpack.DefinePlugin({__IS_BROWSER__ : true })
   ],
   module: {	    	
     loaders: [
       { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel',
-        query: {
-          presets: ['es2015', 'stage-2', 'react']
-        }
-      },
-	  { test: /\.js?$/, exclude: /node_modules/, loader: 'babel',
         query: {
           presets: ['es2015', 'stage-2', 'react']
         }
@@ -55,16 +50,10 @@ var config = {
         ]
       },	  
       { test: /\.css$/, loader: 'style!css' },
+      { test: /\.(json)$/,  use: "json-loader" },
       { test: /\.(png|svg)$/, loader: 'url-loader?limit=100000' },
       { test: /\.jpg$/, loader: 'file-loader' }
     ]
-  },
-  devServer: {
-    proxy: [{
-      path: new RegExp('/api/(.*)'),
-      rewrite: rewriteUrl('/$1'),
-      target: ''
-    }]
   },
   postcss: [
     cssnano({
