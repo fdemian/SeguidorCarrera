@@ -50,7 +50,7 @@ class Subject extends React.Component {
   render() {
    
    const cursadaClass = this.props.cursada ? " Enabled" : " Disabled";
-   const cssClass = "Subject " + getValueStatus(this.state.value) + cursadaClass;
+   const cssClass = "Subject " + getValueStatus(this.state.value) + " " + cursadaClass;
       
    return (
    <div styleName={cssClass}>

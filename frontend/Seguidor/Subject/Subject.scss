@@ -4,6 +4,7 @@
   max-width: 100%;
   padding-left: 17px;
   padding-bottom: 2px;
+  height: 100px;
   outline: none;
 }
 
@@ -15,34 +16,41 @@
 .Subject.Disabled
 {
   border: 1px solid gainsboro;
+  background-color: gainsboro;
+  font-color: white;
 }
 
 .Subject.Pending.Enabled
 {
   visibility: visible;
-  /*border-color: red;
-  box-shadow: 0 0 10px red;*/
+  border-color: gray;
+  background-color:gray;
+  box-shadow: 0 0 10px gray;
+  color: white;
 }
 
 .Subject.Taking.Enabled
 {
   visibility: visible;
-  /*border-color: #9ecaed;
-  box-shadow: 0 0 10px #9ecaed;*/
+  border-color: #9ecaed;
+  background-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
 }
 
 .Subject.PartiallyFinished.Enabled
 {
   visibility: visible;
-  /*border-color: yellow;
-  box-shadow: 0 0 10px yellow;*/
+  border-color: yellow;
+  background-color: yellow;
+  box-shadow: 0 0 10px yellow;
 }
 
 .Subject.Passed.Enabled
 {
   visibility: visible;
-  /*border-color: green;
-  box-shadow: 0 0 10px green;*/
+  border-color: green;
+  background-color: green;
+  box-shadow: 0 0 10px green;
 }
 
 .Subject.Enabled:hover

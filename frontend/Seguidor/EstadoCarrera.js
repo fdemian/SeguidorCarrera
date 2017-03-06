@@ -28,8 +28,8 @@ class EstadoCarrera extends Component {
 			isStacked: 'percent',
 			series: {
 				0:{color:'green'},
-				1:{color:'red'},
-				2:{color:'gold'},
+				1:{color:'yellow'},
+				2:{color:'#9ecaed'},
 				3:{color:'silver'}
 			}
 		},
