@@ -15,8 +15,8 @@ class EstadoCarrera extends Component {
 		'pendientes': 13,
 		options: {
 			width: '100%',
-			height: 100,
-			chartArea: {width: '90%', height: '15%'},
+			height: 50,
+			chartArea: {width: '90%', height: '50%'},
 			hAxis: {
 				minValue: 0
 			},
@@ -55,7 +55,7 @@ class EstadoCarrera extends Component {
 			options={this.state.options}
 			graph_id="GraficoEstadoCarrera"
 			width="100%"
-			height="100px"
+			height="70px"
 			legend_toggle
 		  />
 		</div>
