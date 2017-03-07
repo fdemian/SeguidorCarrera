@@ -32,10 +32,11 @@ class Seguidor extends Component {
     return <p>Hubo un error recuperando las materias</p>;
 
   return(
-  <div>	
-	<h1 styleName="SeguidorHeading">Materias</h1>
-	 <EstadoCarrera subjects={materias}/>
-
+  <div>
+	<div styleName="SeguidorHeader"> 
+		<h1 styleName="SeguidorHeading">Materias</h1>
+		<EstadoCarrera subjects={materias}/>
+	</div>
 	<div styleName="YearsVisualizer">
     {studyYears.map((year, i) =>		
 	 <YearOfStudy 
